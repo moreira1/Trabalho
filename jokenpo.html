@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PEDRA PAPEL E TESOURA</title>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+  
+  function gerando (min, max){
+    var num1 = Math.random() * possibilidades;
+    var possibilidades = max - min;
+              if(form1.jogadas.value==2){
+                if(num1 > 2){
+                  alert("Pedra ...voce... venceu uma longa batalha contra a tesoura! BOA!");
+                }else if(num1 > 1){
+                  alert("A Pedrita perdeu para el papelito! YOU LOSE!");
+                }else {
+                  alert("As pedras se chocaram e se despedaçaram, EMPATE");
+              }
+        else if(form1.jogadas.value==1){
+           if(num1 > 2){
+            alert("Papelito ganhou de la pedrita! You win");
+          }else if(num1 > 1){
+            alert("Tesoura ganhou do papel! Voce perdeu meu parça");
+          }else{
+            alert("Empate! os papéis se embolaram...");
+          }
+
+      else if(form1.jogadas.value==3){
+        if(num > 2){
+          alert("GANHOU! Sua tesoura picotou o papel em pedaços");
+      }else if(num1 > 1){
+        alert("Sua tesoura bateu numa rocha no chao e se despedaçou");
+      }else {
+        alert("EMPATOU DENOVO");
+      }
+
+           }
+        }
+</script>
+
+</head>
+<style>
+  
+	script {
+    text-align: center;
+  }
+  body  {
+    background-image: url("rapimg.jpg");
+  }
+header {
+    color: black;
+    text-shadow: 1px 1px #2d0047;
+    
+    text-align: center; 
+    font-family: Lucida Sans Unicode;
+    font-size: 20px;
+
+
+</style>
+<body>
+  
+<header>
+  <form name="form1" onsubmit="gerando(0,3)">
+    Se voce tiver coragem, digite 3 para escolher a tesoura na batalha! Digite 2 para as rochas e 1 para optar pelo papel: <input type="text" name="jogadas"/>
+    <input type="submit" name="BATALHAR!"/>
+  </form>
+</header>
+	<audio controls>
+  <source src="crazybeat00.ogg" type="audio/ogg">
+  <source src="crazybeat.mp3" type="audio/mpeg">
+</audio>
+
+	
+	<header> 
+  <h1><b>Marcelo Martins Moreira Filho</b></h1>
+  <p>O MELHOR PEDRA,PAPEL E TESOURA DO MUNDO</p>
+
+  </header>
+     
+</body>
+</html>
